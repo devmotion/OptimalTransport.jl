@@ -1,6 +1,3 @@
-using OptimalTransport
-using Test
+using SafeTestsets
 
-@testset "OptimalTransport.jl" begin
-    # Write your own tests here.
-end
+@safetestset "Earthmover distance" begin include("earthmover.jl") end
